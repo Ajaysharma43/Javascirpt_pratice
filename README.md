@@ -1,5 +1,31 @@
+# JavaScript Practice Coding Problems
 
-```const Promise1 = new Promise((resolve , reject) => {
+## Reverse a String
+
+### Using Functions
+
+# JavaScript Practice Coding Problems
+
+## Reverse a String
+
+### Using Functions
+```javascript
+let str = "hello world";
+let rev = str.split('').reverse().join('');
+console.log(rev);```
+
+### Without Using Functions
+
+```let str = "hello world";
+let rev = "";
+for(let i = 0; i < str.length; i++) {
+    rev += str[str.length - (i + 1)];
+}
+console.log(rev);```
+
+
+```javascript
+const Promise1 = new Promise((resolve , reject) => {
     let a = true
     if(a)
     {
@@ -43,4 +69,4 @@ const Promise3 = new Promise((resolve , reject) => {
 
 Promise.any([Promise1 , Promise2 , Promise3])
 .then((res) => console.log(res))
-.catch((error) => console.error(error)) ```
+.catch((error) => console.error(error))```
