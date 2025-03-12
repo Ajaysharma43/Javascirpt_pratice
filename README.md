@@ -1,3 +1,4 @@
+
 ```const Promise1 = new Promise((resolve , reject) => {
     let a = true
     if(a)
