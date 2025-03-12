@@ -3,12 +3,6 @@
 ## Reverse a String
 
 ### Using Functions
-
-# JavaScript Practice Coding Problems
-
-## Reverse a String
-
-### Using Functions
 ```javascript
 let str = "hello world";
 let rev = str.split('').reverse().join('');
@@ -25,7 +19,58 @@ for(let i = 0; i < str.length; i++) {
 }
 console.log(rev);
 ```
+## Check if a Word is a Palindrome
 
+### Using Functions
+
+```javascript
+let str = "racecar";
+let rev = str.split('').reverse().join("");
+if(str == rev) {
+    console.log(`${str} is a palindrome`);
+} else {
+    console.log(`${str} is not a palindrome`);
+}
+```
+
+
+### Without Using Functions
+
+```javascript
+let str = "racecar";
+let rev = str.split('').reverse().join("");
+if(str == rev) {
+    console.log(`${str} is a palindrome`);
+} else {
+    console.log(`${str} is not a palindrome`);
+}
+```
+
+### Find the Maximum Number in an Array
+
+## Using Functions
+
+```javascript
+let arr = [1, 3, 2, 4, 7, 4, 3, 4];
+let max = arr.sort();
+console.log(max[arr.length-1]);
+```
+
+### Without Using Functions 
+
+```javascript
+let arr = [1, 3, 2, 4, 7, 4, 40, 3, 4];
+let max = null;
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+        if(arr[i] < arr[j]) {
+            max = arr[j];
+            arr[i] = arr[j];
+        }
+    }
+}
+console.log(max);
+```
 
 ```javascript
 const Promise1 = new Promise((resolve , reject) => {
