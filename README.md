@@ -12,16 +12,19 @@
 ```javascript
 let str = "hello world";
 let rev = str.split('').reverse().join('');
-console.log(rev);```
+console.log(rev);
+```
 
 ### Without Using Functions
 
-```let str = "hello world";
+```javascript
+let str = "hello world";
 let rev = "";
 for(let i = 0; i < str.length; i++) {
     rev += str[str.length - (i + 1)];
 }
-console.log(rev);```
+console.log(rev);
+```
 
 
 ```javascript
